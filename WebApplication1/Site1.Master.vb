@@ -14,15 +14,15 @@
 
                 'Session.Contents.RemoveAll()
                 Session("usuario") = ""
-                Response.Redirect("\users/login.aspx")
+                Response.Redirect("\vistas/users/login.aspx")
             Else
                 Label3.Text = "Cerrar Secion"
-                Response.Redirect("\users/login.aspx")
+                Response.Redirect("\vistas/users/login.aspx")
 
             End If
         Else
             Label3.Text = "Cerrar Secion"
-            Response.Redirect("\users/login.aspx")
+            Response.Redirect("\vistas/users/login.aspx")
         End If
 
     End Sub

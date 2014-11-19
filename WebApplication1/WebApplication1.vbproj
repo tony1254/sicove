@@ -91,8 +91,15 @@
     <Content Include="bootstrap\js\jquery-1.11.1.min.js" />
     <Content Include="recursos\img\avatar.png" />
     <Content Include="recursos\img\linux.jpeg" />
-    <Content Include="users\login.aspx" />
-    <Content Include="users\form.aspx" />
+    <Content Include="vistas\old\form1.aspx" />
+    <Content Include="vistas\compraventa\form2.aspx" />
+    <Content Include="vistas\compraventa\form3.aspx" />
+    <Content Include="vistas\compraventa\form4.aspx" />
+    <Content Include="vistas\compraventa\index.aspx" />
+    <Content Include="vistas\compraventa\WebForm1.aspx" />
+    <Content Include="vistas\users\login.aspx" />
+    <Content Include="vistas\users\form.aspx" />
+    <Content Include="vistas\users\show.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
@@ -101,6 +108,7 @@
     <Content Include="WebForm5.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controles\controlescompraventa.vb" />
     <Compile Include="controles\controlesusuario.vb" />
     <Compile Include="controles\Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -129,18 +137,67 @@
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="users\login.aspx.designer.vb">
+    <Compile Include="vistas\old\form1.aspx.designer.vb">
+      <DependentUpon>form1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\old\form1.aspx.vb">
+      <DependentUpon>form1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vistas\compraventa\form2.aspx.designer.vb">
+      <DependentUpon>form2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\compraventa\form2.aspx.vb">
+      <DependentUpon>form2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vistas\compraventa\form3.aspx.designer.vb">
+      <DependentUpon>form3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\compraventa\form3.aspx.vb">
+      <DependentUpon>form3.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vistas\compraventa\form4.aspx.designer.vb">
+      <DependentUpon>form4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\compraventa\form4.aspx.vb">
+      <DependentUpon>form4.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vistas\compraventa\index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\compraventa\index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vistas\compraventa\WebForm1.aspx.designer.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\compraventa\WebForm1.aspx.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vistas\users\login.aspx.designer.vb">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="users\login.aspx.vb">
+    <Compile Include="vistas\users\login.aspx.vb">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="users\form.aspx.designer.vb">
+    <Compile Include="vistas\users\form.aspx.designer.vb">
       <DependentUpon>form.aspx</DependentUpon>
     </Compile>
-    <Compile Include="users\form.aspx.vb">
+    <Compile Include="vistas\users\form.aspx.vb">
       <DependentUpon>form.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vistas\users\show.aspx.designer.vb">
+      <DependentUpon>show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\users\show.aspx.vb">
+      <DependentUpon>show.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="WebForm1.aspx.designer.vb">
@@ -212,6 +269,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bootstrap\temas\cyborg\" />
+    <Folder Include="vistas\finanzas\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

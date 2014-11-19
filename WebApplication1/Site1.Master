@@ -1,5 +1,9 @@
 ﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site1.master.vb" Inherits="WebApplication1.Site1" %>
+<%@ Import Namespace="WebApplication1" %>
 
+<%@ Import Namespace="System.Data.SqlClient" %>
+<%@ Import Namespace="System.Data.SqlTypes" %>
+<%@ Import Namespace="System.Data" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -74,6 +78,7 @@
           <span  class=" glyphicon glyphicon-user"> </span>
              <%  
                  Response.Write(Session("usuario"))
+                 Response.Write(Session("rol"))
                  %>
              
           <%
@@ -94,10 +99,18 @@
       </li>
 
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span> <b class="caret"></b></a>
         <ul class="dropdown-menu">
-         
-          <li><a href="#">Another action</a></li>
+          <%
+              If Not (Session("rol") Is Nothing) Then
+                  If  (Session("rol") = 1) Then
+           %>
+          <li><a href="\vistas/users/show.aspx">Ver Usuarios</a></li>
+                 <%
+                 End If
+             End If
+                 
+           %>
           <li><a href="#">Something else here</a></li>
           <li class="divider"></li>
          
@@ -153,6 +166,4 @@
     <script src="\bootstrap/js/jquery-1.11.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="\bootstrap/js/bootstrap.min.js"></script>
-</body>
-
-</html>
+</body></html>

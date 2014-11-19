@@ -1,32 +1,31 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
 Imports System.Data.SqlTypes
-
 Module Module1
-
-    'Inicio coneccion
-    Public cnn As New SqlConnection("Server=TONY-PC;Database=sicove;User Id=sa; Password=1234;")
+    Public cnn As New SqlConnection("Server=TONY-PC;Database=prueba;User Id=sa; Password=1234;")
     Dim myB As String = "saved value"
+    Public Session("usuario")
+
+
+
     Public Sub conectarce()
         Try
             If cnn.State = 1 Then
                 cnn.Close()
             End If
+
             cnn.Open()
-            'MsgBox("entro")
+            MsgBox("entro")
         Catch ex As Exception
             If InStr(ex.ToString, "0x80131904") Then
                 MsgBox("ERROR:no se pudo conectar al servidor", MsgBoxStyle.Critical, "ERROR 1")
             Else
                 MsgBox("ERROR:no se pudo conectar al servidor por otra razon ", MsgBoxStyle.Critical, "ERROR 2")
             End If
+
+
         End Try
     End Sub
-    'Fin coneccion
-
-
-
-
     Public Sub insertgrado(ByVal Id As SqlString, ByVal Nom As SqlString)
 
         Dim comandoIG As New SqlCommand()

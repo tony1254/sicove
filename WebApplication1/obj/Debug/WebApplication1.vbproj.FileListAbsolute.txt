@@ -6,3 +6,19 @@ c:\Users\Luis\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplicati
 c:\Users\Luis\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 c:\Users\Luis\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.xml
 c:\Users\Luis\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\base_datos\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\base_datos\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\base_datos\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.xml
+C:\Users\base_datos\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Resources.resources
+C:\Users\base_datos\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.vbproj.GenerateResource.Cache
+C:\Users\base_datos\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\base_datos\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.xml
+C:\Users\base_datos\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Luis\Documents\Visual Studio 2012\projec2\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\Luis\Documents\Visual Studio 2012\projec2\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Luis\Documents\Visual Studio 2012\projec2\WebApplication1\WebApplication1\bin\WebApplication1.xml
+C:\Users\Luis\Documents\Visual Studio 2012\projec2\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Resources.resources
+C:\Users\Luis\Documents\Visual Studio 2012\projec2\WebApplication1\WebApplication1\obj\Debug\WebApplication1.vbproj.GenerateResource.Cache
+C:\Users\Luis\Documents\Visual Studio 2012\projec2\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\Luis\Documents\Visual Studio 2012\projec2\WebApplication1\WebApplication1\obj\Debug\WebApplication1.xml
+C:\Users\Luis\Documents\Visual Studio 2012\projec2\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
