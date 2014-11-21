@@ -81,6 +81,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="404.aspx" />
     <Content Include="bootstrap\css\bootstrap-theme.css" />
     <Content Include="bootstrap\css\bootstrap-theme.min.css" />
     <Content Include="bootstrap\css\bootstrap.css" />
@@ -89,6 +90,7 @@
     <Content Include="bootstrap\js\bootstrap.js" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="bootstrap\js\jquery-1.11.1.min.js" />
+    <Content Include="Global.asax" />
     <Content Include="recursos\img\avatar.png" />
     <Content Include="recursos\img\linux.jpeg" />
     <Content Include="vistas\old\form1.aspx" />
@@ -97,20 +99,34 @@
     <Content Include="vistas\compraventa\form4.aspx" />
     <Content Include="vistas\compraventa\index.aspx" />
     <Content Include="vistas\compraventa\WebForm1.aspx" />
+    <Content Include="vistas\users\borrar.aspx" />
+    <Content Include="vistas\users\crear1.aspx" />
+    <Content Include="vistas\users\crear2.aspx" />
+    <Content Include="vistas\users\crear3.aspx" />
     <Content Include="vistas\users\login.aspx" />
     <Content Include="vistas\users\form.aspx" />
+    <Content Include="vistas\users\mostrar.aspx" />
     <Content Include="vistas\users\show.aspx" />
     <Content Include="Web.config" />
-    <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
     <Content Include="index.aspx" />
     <Content Include="WebForm4.aspx" />
     <Content Include="WebForm5.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="404.aspx.designer.vb">
+      <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="404.aspx.vb">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="controles\controlescompraventa.vb" />
     <Compile Include="controles\controlesusuario.vb" />
     <Compile Include="controles\Module1.vb" />
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -179,6 +195,34 @@
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="vistas\users\borrar.aspx.designer.vb">
+      <DependentUpon>borrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\users\borrar.aspx.vb">
+      <DependentUpon>borrar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vistas\users\crear1.aspx.designer.vb">
+      <DependentUpon>crear1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\users\crear1.aspx.vb">
+      <DependentUpon>crear1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vistas\users\crear2.aspx.designer.vb">
+      <DependentUpon>crear2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\users\crear2.aspx.vb">
+      <DependentUpon>crear2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="vistas\users\crear3.aspx.designer.vb">
+      <DependentUpon>crear3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\users\crear3.aspx.vb">
+      <DependentUpon>crear3.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="vistas\users\login.aspx.designer.vb">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
@@ -193,19 +237,19 @@
       <DependentUpon>form.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="vistas\users\mostrar.aspx.designer.vb">
+      <DependentUpon>mostrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\users\mostrar.aspx.vb">
+      <DependentUpon>mostrar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="vistas\users\show.aspx.designer.vb">
       <DependentUpon>show.aspx</DependentUpon>
     </Compile>
     <Compile Include="vistas\users\show.aspx.vb">
       <DependentUpon>show.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.vb">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm1.aspx.vb">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="WebForm2.aspx.designer.vb">
       <DependentUpon>WebForm2.aspx</DependentUpon>
@@ -296,7 +340,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>63280</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:50819/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

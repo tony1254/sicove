@@ -11,50 +11,50 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class show
+Partial Public Class crear3
 
     '''<summary>
-    '''Control boton.
+    '''Control textuname.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents boton As Global.System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents textuname As Global.System.Web.UI.HtmlControls.HtmlInputText
 
     '''<summary>
-    '''Control boton2.
+    '''Control textpass.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents boton2 As Global.System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents textpass As Global.System.Web.UI.HtmlControls.HtmlInputText
 
     '''<summary>
-    '''Control boton3.
+    '''Control textrol.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents boton3 As Global.System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents textrol As Global.System.Web.UI.HtmlControls.HtmlSelect
 
     '''<summary>
-    '''Control ButtonNuevos.
+    '''Control Buttonsiguiente.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents ButtonNuevos As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents Buttonsiguiente As Global.System.Web.UI.WebControls.LinkButton
 
     '''<summary>
-    '''Control Label1.
+    '''Control Buttonfinal.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Buttonfinal As Global.System.Web.UI.WebControls.LinkButton
 End Class

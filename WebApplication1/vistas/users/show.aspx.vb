@@ -5,4 +5,7 @@
 
     End Sub
 
+    Private Sub ButtonNuevos_Click(sender As Object, e As EventArgs) Handles ButtonNuevos.Click
+        Response.Redirect("\vistas/users/crear1.aspx")
+    End Sub
 End Class

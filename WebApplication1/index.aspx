@@ -3,15 +3,11 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
   
-    <div>
-
-        <br />
-            <div class="input-group">
-                  <span class="input-group-addon">@</span>
-                  <input ID="TextBox2" runat="server" type="text" class="form-control" placeholder="Username">
+<div class="row">
+            <div class="col-md-6 col-md-offset-3"> 
+                  
+                <img src="\recursos/img/home.jpg"" class="img-responsive" alt="Responsive image">
             </div>
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-        <asp:Button ID="Button1" runat="server" Text="Button" />
-    </div>
+        </div>
 </asp:Content>
 
